@@ -1,11 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="Assets/css/styles.css" rel="stylesheet">
+    <title>Mi portafolio - malvarez</title>
 </head>
 <body>
-    <h1>MI SUBIDA A GITHUB!!</h1>
+    <div class="wrapper">
+        <!--Sección 1: Header-->
+        <header class="header">
+            <h1>¡Bienvenido a mi portafolio!</h1>    
+        </header>    
+        <!--Sección 2: Contenido-->
+        <article class="main">
+            <div id="resumen">
+                <p id="id_resumen"></p> 
+            </div>
+            <div id="habilidades">
+                <h2>Habilidades Técnicas</h2>
+                <ul id="list_hab">
+                    <!--Inserción de habilidades técnicas-->
+                </ul>
+                <h2>Habilidades Blandas</h2>
+                <ul id="list_hab_soft">
+                    <!--Inserción de habilidades blandas-->
+                </ul>
+            </div>
+            <div id="clientes">
+                <h2>Clientes</h2>
+                <div id="cards" class="card border-light">
+                    <!--
+                    <img src="Assets/img/copec.png" class="card-img-top" alt="copec">
+                    <div class="card-body">
+                      <p class="card-text">Proyecto de desarrollo web app vue</p>
+                    </div>
+                    -->
+                </div>
+            </div>
+            <!--Formulario-->
+            <form id="form">
+                <h2>Formulario de Contacto</h2>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="mail" placeholder="nombre@ejemplo.com">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="text_area" rows="3"></textarea>
+                  </div>
+                  <button id="envio_form" type="submit" class="btn btn-primary mb-3">Enviar</button>
+                </form>
+        </article>
+        <aside class="aside aside-1"></aside>
+        <aside class="aside aside-2"></aside>
+  
+            <footer class="footer">
+                <p id="id_footer"></p>
+            </footer>
+  
+    </div>
+
+<!--Importación lógica-->
+<script src="Assets/js/script.js"></script>
+<!--Bootstrap-->
+
 </body>
 </html>
